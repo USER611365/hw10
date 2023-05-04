@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto load</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>張家祖廟</h1>
+        <p>
+        張家祖廟（發祥堂）是位於臺灣中部的臺中市西屯區的直轄市定古蹟，建立時間為1904年，鄰近統聯客運台中轉運站。屬私人祠堂性質，正殿奉祀祖先牌位，左右內外護龍除供族人居住外亦出租給外人使用。    
+        </p>
+        <br>
+        <br>
+        <h3>單場景VR</h3>
+        <div id="panorama"></div>
+        <script>
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "1.jpg",
+            "autoLoad": true
+        });
+        </script>
+       <br>
+      <br>
+      <h3>多場景VR</h3>
+      <iframe frameborder="0" src="tour.html" width="600px" height="400px"></iframe>
+      <br>
+      <br>
+      <p style="background-color: black;">
+      <font style="color: white;">資科三A 410906595 楊承翰 製作</font>
+
+    </center>
+</body>
+</html>
